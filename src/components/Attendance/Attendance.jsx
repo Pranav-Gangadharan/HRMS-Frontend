@@ -41,9 +41,12 @@ const Attendance = () => {
     // ) {
     setPunchIn(true);
     try {
-      await axios.post("http://localhost:4000/api/attendance/punchin", {
-        employeeId,
-      });
+      await axios.post(
+        "https://hrms-backend-uk0e.onrender.com/api/attendance/punchin",
+        {
+          employeeId,
+        }
+      );
       toast.success("Punched in successfully");
     } catch (error) {
       console.error("Punch in failed:", error.response.data.message);
@@ -66,9 +69,12 @@ const Attendance = () => {
     // ) {
     setPunchOut(true);
     try {
-      await axios.post("http://localhost:4000/api/attendance/punchout", {
-        employeeId,
-      });
+      await axios.post(
+        "https://hrms-backend-uk0e.onrender.com/api/attendance/punchout",
+        {
+          employeeId,
+        }
+      );
       toast.success("Punched out successfully");
     } catch (error) {
       console.error("Punch out failed:", error.response.data.message);

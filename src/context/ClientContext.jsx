@@ -15,7 +15,9 @@ export const ClientProvider = ({ children }) => {
     const fetchClients = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:4000/api/clients");
+        const response = await axios.get(
+          "https://hrms-backend-uk0e.onrender.com/api/clients"
+        );
         setClients(response.data);
       } catch (error) {
         console.error("Error fetching clients:", error);
@@ -30,14 +32,19 @@ export const ClientProvider = ({ children }) => {
     try {
       if (clientData._id) {
         await axios.put(
-          `http://localhost:4000/api/clients/${clientData._id}`,
+          `https://hrms-backend-uk0e.onrender.com/api/clients/${clientData._id}`,
           clientData
         );
       } else {
-        await axios.post("http://localhost:4000/api/clients", clientData);
+        await axios.post(
+          "https://hrms-backend-uk0e.onrender.com/api/clients",
+          clientData
+        );
       }
       // After adding or updating the client, fetch the updated list of clients
-      const response = await axios.get("http://localhost:4000/api/clients");
+      const response = await axios.get(
+        "https://hrms-backend-uk0e.onrender.com/api/clients"
+      );
       setClients(response.data);
     } catch (error) {
       console.error("Error adding/updating client:", error);
@@ -46,9 +53,13 @@ export const ClientProvider = ({ children }) => {
 
   const deleteClient = async (clientId) => {
     try {
-      await axios.delete(`http://localhost:4000/api/clients/${clientId}`);
+      await axios.delete(
+        `https://hrms-backend-uk0e.onrender.com/api/clients/${clientId}`
+      );
       // After deleting the client, fetch the updated list of clients
-      const response = await axios.get("http://localhost:4000/api/clients");
+      const response = await axios.get(
+        "https://hrms-backend-uk0e.onrender.com/api/clients"
+      );
       setClients(response.data);
     } catch (error) {
       console.error("Error deleting client:", error);

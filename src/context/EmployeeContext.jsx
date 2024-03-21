@@ -15,7 +15,9 @@ export const EmployeeProvider = ({ children }) => {
   const fetchEmployees = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:4000/api/employees");
+      const response = await axios.get(
+        "https://hrms-backend-uk0e.onrender.com/api/employees"
+      );
       setEmployees(response.data);
     } catch (error) {
       console.error("Error fetching employees:", error);
@@ -28,13 +30,16 @@ export const EmployeeProvider = ({ children }) => {
     try {
       if (employeeData._id) {
         await axios.put(
-          `http://localhost:4000/api/employees/${employeeData._id}`,
+          `https://hrms-backend-uk0e.onrender.com/api/employees/${employeeData._id}`,
           employeeData
         );
         toast.success("Employee updated successfully!");
       } else {
-      await axios.post("http://localhost:4000/api/employees", employeeData);
-      toast.success("Employee added successfully!");
+        await axios.post(
+          "https://hrms-backend-uk0e.onrender.com/api/employees",
+          employeeData
+        );
+        toast.success("Employee added successfully!");
       }
       fetchEmployees(); // Refresh employee list after update
     } catch (error) {
@@ -46,7 +51,9 @@ export const EmployeeProvider = ({ children }) => {
   // Function to delete an employee
   const deleteEmployee = async (employeeId) => {
     try {
-      await axios.delete(`http://localhost:4000/api/employees/${employeeId}`);
+      await axios.delete(
+        `https://hrms-backend-uk0e.onrender.com/api/employees/${employeeId}`
+      );
       toast.success("Employee deleted successfully!");
       fetchEmployees();
     } catch (error) {
