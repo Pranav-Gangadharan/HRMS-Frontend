@@ -28,7 +28,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://hrms-backend-uk0e.onrender.com/api/auth/login",
+        "https://hrms-backend-cu4x.onrender.com/api/auth/login",
         { email, password }
       );
       const { token, user } = response.data;

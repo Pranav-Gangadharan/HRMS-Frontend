@@ -42,7 +42,7 @@ const Attendance = () => {
     setPunchIn(true);
     try {
       await axios.post(
-        "https://hrms-backend-uk0e.onrender.com/api/attendance/punchin",
+        "https://hrms-backend-cu4x.onrender.com/api/attendance/punchin",
         {
           employeeId,
         }
@@ -70,7 +70,7 @@ const Attendance = () => {
     setPunchOut(true);
     try {
       await axios.post(
-        "https://hrms-backend-uk0e.onrender.com/api/attendance/punchout",
+        "https://hrms-backend-cu4x.onrender.com/api/attendance/punchout",
         {
           employeeId,
         }

@@ -16,7 +16,7 @@ export const ClientProvider = ({ children }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          "https://hrms-backend-uk0e.onrender.com/api/clients"
+          "https://hrms-backend-cu4x.onrender.com/api/clients"
         );
         setClients(response.data);
       } catch (error) {
@@ -32,18 +32,18 @@ export const ClientProvider = ({ children }) => {
     try {
       if (clientData._id) {
         await axios.put(
-          `https://hrms-backend-uk0e.onrender.com/api/clients/${clientData._id}`,
+          `https://hrms-backend-cu4x.onrender.com/api/clients/${clientData._id}`,
           clientData
         );
       } else {
         await axios.post(
-          "https://hrms-backend-uk0e.onrender.com/api/clients",
+          "https://hrms-backend-cu4x.onrender.com/api/clients",
           clientData
         );
       }
       // After adding or updating the client, fetch the updated list of clients
       const response = await axios.get(
-        "https://hrms-backend-uk0e.onrender.com/api/clients"
+        "https://hrms-backend-cu4x.onrender.com/api/clients"
       );
       setClients(response.data);
     } catch (error) {
@@ -54,11 +54,11 @@ export const ClientProvider = ({ children }) => {
   const deleteClient = async (clientId) => {
     try {
       await axios.delete(
-        `https://hrms-backend-uk0e.onrender.com/api/clients/${clientId}`
+        `https://hrms-backend-cu4x.onrender.com/api/clients/${clientId}`
       );
       // After deleting the client, fetch the updated list of clients
       const response = await axios.get(
-        "https://hrms-backend-uk0e.onrender.com/api/clients"
+        "https://hrms-backend-cu4x.onrender.com/api/clients"
       );
       setClients(response.data);
     } catch (error) {

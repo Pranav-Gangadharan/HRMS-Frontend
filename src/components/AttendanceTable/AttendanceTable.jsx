@@ -13,7 +13,7 @@ const AttendanceTable = () => {
     const fetchAttendance = async () => {
       try {
         const response = await axios.get(
-          "https://hrms-backend-uk0e.onrender.com/api/attendance"
+          "https://hrms-backend-cu4x.onrender.com/api/attendance"
         );
         setAttendance(response.data);
         setFilteredAttendance(response.data);
