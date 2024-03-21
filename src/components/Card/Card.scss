@@ -1,0 +1,85 @@
+.cardSection {
+  .wrapper {
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    width: 10rem;
+    height: 11rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px lightgray;
+    flex-direction: column;
+    justify-content: center;
+
+    .icon {
+      font-size: 2.5rem;
+    }
+
+    .cardDetails {
+      margin-top: 10px;
+      text-align: center;
+
+      h4 {
+        font-size: var(--smallFontSize);
+      }
+    }
+  }
+
+  .empWrapper {
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px lightgray;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50px;
+      margin-top: 0.5rem;
+    }
+
+    .cardDetails {
+      margin-top: 10px;
+      text-align: center;
+
+      h4 {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      cursor: pointer;
+      .optionIcon {
+        font-size: 1.2rem;
+      }
+      .options {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px lightgray;
+        z-index: 1;
+
+        div {
+          padding: 0.5rem;
+          cursor: pointer;
+
+          &:hover {
+            background-color: lightgray;
+          }
+        }
+      }
+    }
+  }
+}

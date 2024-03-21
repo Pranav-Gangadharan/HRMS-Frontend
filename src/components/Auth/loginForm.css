@@ -1,0 +1,44 @@
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.login-form .logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.login-form .logo-wrapper .logo {
+  width: 250px;
+}
+.login-form label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.login-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.login-form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.login-form .login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-form .login-button:hover {
+  background-color: #0056b3;
+}
+.login-form .login-button:focus {
+  outline: none;
+}/*# sourceMappingURL=loginForm.css.map */

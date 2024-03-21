@@ -1,0 +1,73 @@
+.cardSection .wrapper {
+  border: 3px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  width: 10rem;
+  height: 11rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px lightgray;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardSection .wrapper .icon {
+  font-size: 2.5rem;
+}
+.cardSection .wrapper .cardDetails {
+  margin-top: 10px;
+  text-align: center;
+}
+.cardSection .wrapper .cardDetails h4 {
+  font-size: var(--smallFontSize);
+}
+.cardSection .empWrapper {
+  border: 3px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  width: 13rem;
+  height: 13rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px lightgray;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.cardSection .empWrapper img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50px;
+  margin-top: 0.5rem;
+}
+.cardSection .empWrapper .cardDetails {
+  margin-top: 10px;
+  text-align: center;
+}
+.cardSection .empWrapper .cardDetails h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.cardSection .empWrapper .menu {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+.cardSection .empWrapper .menu .optionIcon {
+  font-size: 1.2rem;
+}
+.cardSection .empWrapper .menu .options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px lightgray;
+  z-index: 1;
+}
+.cardSection .empWrapper .menu .options div {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.cardSection .empWrapper .menu .options div:hover {
+  background-color: lightgray;
+}/*# sourceMappingURL=Card.css.map */

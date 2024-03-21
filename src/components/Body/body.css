@@ -1,0 +1,17 @@
+.mainContent {
+  width: 82%;
+  height: 100%;
+  padding: 2rem;
+  overflow: auto;
+}
+.mainContent .bottom {
+  margin: 2.5rem 0rem;
+  gap: 4.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mainContent .chartSection {
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=body.css.map */

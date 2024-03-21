@@ -1,0 +1,60 @@
+.attendance-container {
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.attendance-container .time-container {
+  display: flex;
+  justify-content: center;
+}
+.attendance-container .time-container .current-time {
+  font-size: 24px;
+  margin-top: 24px;
+  padding: 10px;
+  color: #2260e6;
+  font-weight: 600;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 18px;
+  margin-bottom: 20px;
+}
+.attendance-container h2 {
+  margin: 10px 0px;
+  color: #333;
+}
+.attendance-container .buttons-container {
+  display: flex;
+  justify-content: center;
+}
+.attendance-container .buttons-container button {
+  padding: 10px 20px;
+  margin: 20px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.attendance-container .buttons-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.attendance-container .buttons-container .punch-in {
+  background-color: #4caf50;
+  color: white;
+}
+.attendance-container .buttons-container .punch-in:hover {
+  background-color: #45a049;
+}
+.attendance-container .buttons-container .punch-out {
+  background-color: #f44336;
+  color: white;
+}
+.attendance-container .buttons-container .punch-out:hover {
+  background-color: #d32f2f;
+}
+.attendance-container .attendance-table {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=Attendance.css.map */

@@ -1,0 +1,73 @@
+/* Colors and Styles */
+:root {
+  --PrimaryColor: rgb(10, 12, 12);
+  --BgColor: rgb(238, 238, 238);
+  --textColor: rgb(83, 83, 83);
+  --hoverColor: rgb(177, 240, 240);
+
+  /* Fonts and Typo */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+}
+
+.employeeSection {
+  width: 80%;
+  height: 100%;
+  margin: 2rem 2rem;
+  overflow: auto;
+
+  .employeeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem;
+
+    .employeeTitle {
+      font-size: var(--h1FontSize);
+    }
+
+    .addEmployeeButton {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+
+    .logoutButton {
+      background-color: rgb(245, 55, 55);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: rgb(212, 40, 40);
+      }
+    }
+  }
+
+  .employeeWrapper {
+    flex-wrap: wrap;
+    margin: 2.5rem 0rem;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

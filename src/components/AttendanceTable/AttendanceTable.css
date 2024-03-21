@@ -1,0 +1,70 @@
+.attendance-container {
+  padding: 10px;
+  width: 82%;
+  height: 100%;
+  overflow: auto;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.report-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.report-container .filter-container {
+  margin-bottom: 20px;
+}
+.report-container .filter-container input[type=text] {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.report-container .export-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.report-container .export-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}/*# sourceMappingURL=AttendanceTable.css.map */

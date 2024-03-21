@@ -1,0 +1,69 @@
+/* Colors and Styles */
+:root {
+  --PrimaryColor: rgb(10, 12, 12);
+  --BgColor: rgb(238, 238, 238);
+  --textColor: rgb(83, 83, 83);
+  --hoverColor: rgb(177, 240, 240);
+  /* Fonts and Typo */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+}
+
+.topSection .headerSection {
+  justify-content: space-between;
+}
+.topSection .headerSection .title h1 {
+  font-size: var(--h1FontSize);
+  color: var(--PrimaryColor);
+  font-weight: 700;
+}
+.topSection .headerSection .title p {
+  font-size: var(--normalFontSize);
+  color: var(--textColor);
+  font-weight: 500;
+}
+.topSection .headerSection .searchBar {
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px lightgrey;
+}
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+.topSection .headerSection .searchBar .icon {
+  color: var(--textColor);
+}
+.topSection .headerSection .searchBar .icon:hover {
+  color: var(--PrimaryColor);
+}
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+.topSection .headerSection .adminDiv .icon {
+  font-size: 2rem;
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px lightgray;
+  color: var(var(--textColor));
+}
+.topSection .headerSection .adminDiv .adminImage {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px lightgray;
+}
+.topSection .headerSection .adminDiv .adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}/*# sourceMappingURL=navbar.css.map */

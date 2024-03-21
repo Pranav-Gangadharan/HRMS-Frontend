@@ -1,0 +1,47 @@
+.client {
+  width: 82%;
+  height: 100%;
+  overflow: auto;
+}
+
+.clientHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.inputText {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px lightgrey;
+  border: 1px solid lightgray;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.addClientButton {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  box-shadow: 0 2px 4px var(--textColor);
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    background: #23863a;
+  }
+}

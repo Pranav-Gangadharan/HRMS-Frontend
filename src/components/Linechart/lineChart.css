@@ -1,0 +1,31 @@
+:root {
+  --PrimaryColor: rgb(10, 12, 12);
+  --BgColor: rgb(238, 238, 238);
+  --textColor: rgb(83, 83, 83);
+  --hoverColor: rgb(177, 240, 240);
+  /* Fonts and Typo */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+}
+
+.charts {
+  border: 3px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  width: 600px;
+  height: 420px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px lightgray;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.charts .title {
+  font-size: var(--h2FontSize);
+  font-weight: 300;
+}/*# sourceMappingURL=lineChart.css.map */
